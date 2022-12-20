@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rick and Morty</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <div class="title">
+            <h1>Rick and Morty</h1>
+        </div>
+        <div class="row" id="cards"></div>
+
+    </main>
+    <span id="lp"></span>
+    <template id="template-card">
+        <article>
+
+            <div class="cards">
+                <figure>
+                    <img src="./images/1.jpeg" alt="" class="img-card" />
+                </figure>
+                <h2 class="nombre"></h2>
+                <div class="info">
+                    <h3 class="estado text">Estado : Vivo</h3>
+                    <h3 class="especie text">Especie: Humano</h3>
+                    <h3 class="tipo text">Tipo : Femenino</h3>
+                    <h3 class="genero text">Genero : Femenino</h3>
+                   
+                </div>
+            </div>
+        </article>
+
+
+    </template>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>

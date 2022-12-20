@@ -1,0 +1,81 @@
+:root{
+    --primary: #5c93e4;
+    --title:'Rock Salt', cursive;
+    --text:'Chivo Mono', monospace;
+    --background:#cae8f6;
+    --title_color:#0f331c;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/pexels-johannes-plenio-2259232.jpg);
+    min-height: 100vh;
+}
+
+#cards{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    flex-wrap: wrap;
+}
+
+article{
+    margin:2rem;
+}
+.img-card{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    object-fit: cover;
+    width:14rem;
+    height:13rem;
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    font-family: var(--title);
+    font-size: 2rem;
+    width: 100%;
+    color:var(--title_color);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:15rem;
+    color:var(--title_color);
+    height: 21rem;
+    border: 2px solid var(--primary);
+    border-radius: 1rem;
+    overflow: hidden;
+    padding:.5rem;
+    position:relative;
+    /* background-color: rgb(232, 226, 226); */
+    -webkit-box-shadow: inset 0px 7px 37px -11px rgba(124,245,120,1);
+-moz-box-shadow: inset 0px 7px 37px -11px rgba(124,245,120,1);
+box-shadow: inset 0px 7px 37px -11px rgba(124,245,120,1);
+    /* -webkit-box-shadow: 0px 7px 37px -11px rgba(124,245,120,1);
+-moz-box-shadow: 0px 7px 37px -11px rgba(124,245,120,1);
+box-shadow: 0px 7px 37px -11px rgba(124,245,120,1); */
+}
+
+.cards .nombre{
+    width: 100%;
+    text-align: center;
+    font-family: var(--title);
+    font-size:1rem;
+    position: absolute;
+    top:13rem;
+}
+
+.cards .text{
+    font-family: var(--text);
+    font-size: .7rem;
+    
+}
